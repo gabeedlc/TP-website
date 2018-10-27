@@ -1,0 +1,628 @@
+/* estilos.css */
+
+@import url('https://fonts.googleapis.com/css?family=Michroma|Open+Sans');
+
+:root {
+    --blanco: #fff;
+    --negro: #262626;
+    --violeta: #323981;
+    --gris1: #ccc;
+    --gris2: #999;
+    --gris3: #444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--blanco);
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Michroma', sans-serif;
+    font-variant-caps: all-petite-caps;
+    font-size: 2.5em;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+.contenedor, .pie {
+    width: 100%;
+    margin: 0 auto;
+}   
+
+/* 
+---------------------------------------
+NAVBAR
+---------------------------------------
+*/
+
+.encabezado {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    margin: 0 auto;
+    padding: 10px 30px;
+    background-color: var(--blanco);
+    border-bottom: 1px solid var(--gris1);
+}
+
+.encabezado img {
+    height: 45px;
+}
+
+.botonera-lista {
+    display: flex;
+    list-style-type: none;
+    font-family: 'Michroma', sans-serif;
+    letter-spacing: 0.15em;
+}
+
+.botonera-item {
+    margin: 0 20px;
+    display: block;  
+
+}
+
+.botonera-item a:hover {
+    background-color: var(--violeta);
+    color: var(--blanco);
+    
+
+}
+
+.botonera-lista a {
+    color: #000;
+    font-size: 13px;
+}
+
+/* 
+---------------------------------------
+COVER
+---------------------------------------
+*/
+
+
+.slider-img h1 {
+    color: #FFF;
+    text-shadow: 0 0 2px #000;
+    font-size: 40px;
+    text-align: center;
+    line-height: 100vh;
+}
+
+.slider-img {
+    width: 100%;
+    height: 95vh;
+    /* position: relative; */
+    background-image: url(../img/robots.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-attachment: fixed;
+    margin-bottom: 60px;
+    z-index: 40;
+}
+
+/* 
+---------------------------------------
+SECTION: ROBOTECA
+---------------------------------------
+*/
+
+.roboteca {
+    display: flex;
+    height: 90vh;
+    margin-bottom: 60px;
+}
+
+.izq-roboteca {
+    width: 45%;
+    border-right: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+
+.izq-roboteca-wrapper {
+    margin-left: 50px;
+    border-left: 1px solid #ccc;
+    padding: 0 10px;
+}
+
+.izq-roboteca h1 {
+    margin-bottom: 30px;
+}
+
+.izq-roboteca h3 {
+    margin-bottom: 30px;
+    font-weight: lighter;
+    font-variant-caps: all-petite-caps;
+    font-size: 1.5em;
+    text-justify: distribute;
+    text-align-last: justify;
+    color: var(--gris1);
+}
+
+.izq-roboteca p {
+    width: 80%;
+}
+
+.button {
+    position: relative;
+    top: 30px;
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    cursor: pointer;
+    border-left: 8px solid #5f5cde;
+    background-color: var(--negro);
+    color: var(--blanco);
+    transition: all 0.5s;
+}
+
+.button:hover {
+    background-color: var(--gris1);
+    color: var(--negro);
+}
+
+.der-roboteca {
+    width: 55%;
+    position: relative;
+}
+
+.der-roboteca .img1 {
+    width: 280px;
+    height: auto;
+    border-radius: 5%;
+    box-shadow: 0 0 20px #888;
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    z-index: 3;
+}
+
+.der-roboteca .img2 {
+    width: 250px;
+    height: auto;
+    border-radius: 5%;
+    box-shadow: 0 0 20px #888;
+    position: absolute;
+    top: 350px;
+    left: 160px;
+    z-index: 4;
+}
+
+.der-roboteca .img3 {
+    width: 160px;
+    height: auto;
+    border-radius: 5%;
+    box-shadow: 0 0 20px #888;
+    position: absolute;
+    top: 20px;
+    left: 480px;
+    z-index: 3;
+}
+
+.der-roboteca .img4 {
+    width: 250px;
+    height: auto;
+    border-radius: 5%;
+    box-shadow: 0 0 20px #888;
+    position: absolute;
+    top: 300px;
+    left: 390px;
+    z-index: 5;
+}
+
+.der-roboteca .img5 {
+    width: 320px;
+    height: auto;
+    border-radius: 5%;
+    box-shadow: 0 0 20px #888;
+    position: absolute;
+    top: 65px;
+    left: 275px;
+    z-index: 1;
+}
+
+.der-roboteca .img6 {
+    width: 200px;
+    height: auto;
+    border-radius: 5%;
+    box-shadow: 0 0 20px #888;
+    position: absolute;
+    top: 50px;
+    left: 65px;
+    z-index: 0;
+}
+
+/* 
+---------------------------------------
+SECTION: I+D
+---------------------------------------
+*/
+
+.id {
+    display: flex;
+    height: 100vh;
+    margin-bottom: 60px;
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+.izq-id {
+    width: 60%;
+    margin: auto auto;
+}
+
+.izq-id-wrapper {
+    margin: auto 50px;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    gap: 2em 2em;
+    
+}
+
+.ejemplo-id {
+    width: 100%;
+    padding: 20px 20px;
+    transition: box-shadow .5s;
+}
+
+.ejemplo-id:hover {
+    box-shadow: 0 0 40px 10px #191919;
+}
+
+.ejemplo-id img {
+    width: 70px;
+    height: auto;
+    margin-bottom: 10px;
+    
+}
+
+.ejemplo-id h3 {
+    font-variant-caps: petite-caps;
+    font-weight: bolder;
+    text-justify: distribute;
+    text-align-last: justify;
+
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.ejemplo-id p {
+    color: var(--gris2);
+    font-weight: lighter;
+    font-size: .90em;
+    letter-spacing: 0.1em;
+}
+
+.der-id {
+    width: 40%;
+    height: 100%;
+}
+
+.der-id-wrapper {
+    margin: 50% 30px;
+    padding: 10px 10px;
+
+}
+
+.der-id h1 {
+    text-align: right;
+    letter-spacing: 0.5em;
+    width: 100%;
+    
+}
+
+.der-id h3 {
+    margin-bottom: 30px;
+    padding-right: 15px;
+    width: 100%;
+    font-weight: lighter;
+    font-variant-caps: all-petite-caps;
+    font-size: 1.5em;
+    text-justify: distribute;
+    text-align-last: justify;
+    color: var(--gris2);
+}
+
+/* 
+---------------------------------------
+SECTION: Proyectos
+---------------------------------------
+*/
+
+.proyectos {
+    height: 100vh;
+}
+
+.proyectos-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 6em;
+    position: relative;
+}
+
+.proyectos-titulo > button {
+    position: absolute;
+    top: 20px;
+    right: 12%;
+}
+
+.proyectos-wrapper {
+	position: relative;
+	margin: 2% auto;
+	padding: 1em 4em;
+    text-align: center;
+    width: 100%;
+}
+
+.proyectos-wrapper figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 4.5%;
+	min-width: 320px;
+	max-width: 480px;
+	max-height: 360px;
+	width: 48%;
+	background: var(--negro);
+	text-align: center;
+	cursor: pointer;
+}
+
+.proyectos-wrapper figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.7;
+}
+
+.proyectos-wrapper figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	backface-visibility: hidden;
+}
+
+.proyectos-wrapper figure figcaption, .proyectos-wrapper figure figcaption > a {
+	position: absolute;
+	top: 15px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.proyectos-wrapper figure figcaption > a {
+	z-index: 1000;
+	font-size: 0;
+	opacity: 0;
+}
+
+.proyectos-wrapper figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 500;
+}
+
+.proyectos-wrapper figure h2, .proyectos-wrapper figure p {
+	margin: 0;
+}
+
+.proyectos-wrapper figure p {
+	letter-spacing: 1px;
+	font-size: 80%;
+}
+
+figure.proyecto-contenido {
+	background: linear-gradient(to bottom, var(--violeta) 0%, var(--negro) 100%); 
+}
+
+figure.proyecto-contenido {
+	transition: opacity 0.8s;
+}
+
+figure.proyecto-contenido:hover img {
+	opacity: 0.4;
+}
+
+figure.proyecto-contenido figcaption::after {
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	height: calc(50% - 30px);
+	border: 7px solid #fff;
+	content: '';
+	transition: transform 0.5s;
+	transform: translate3d(0,-100%,0);
+}
+
+figure.proyecto-contenido:hover figcaption::after {
+	transform: translate3d(0,0,0);
+}
+
+figure.proyecto-contenido figcaption {
+	padding: 3em;
+	text-align: left;
+}
+
+figure.proyecto-contenido p {
+	position: absolute;
+	right: 60px;
+	bottom: 60px;
+	left: 60px;
+	opacity: 0;
+	transition: opacity 0.5s, transform 0.5s;
+	transform: translate3d(0,-100px,0);
+}
+
+figure.proyecto-contenido:hover p {
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}
+
+/* 
+---------------------------------------
+FOOTER
+---------------------------------------
+*/
+
+.pie {
+    height: 90vh;
+    display: flex;
+    background-color: var(--negro);
+}
+
+.izq-footer {
+    width: 50%;
+    position: relative;
+}
+
+.izq-footer-wrapper {
+    margin: 5% 10%;
+    width: 60%;
+    
+}
+
+.izq-footer-wrapper h2 {
+    color: var(--blanco);
+    margin-bottom: 5%;
+    font-size: 2em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.izq-footer-wrapper p {
+    color: var(--gris1);
+    font-size: 0.9em;
+    margin-bottom: 10%;
+    text-transform: initial;
+}
+
+
+.telefono, .mail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.telefono dt, .mail dt {
+    color: var(--gris2);
+    font-size: 1.4em;
+    font-weight: lighter;
+}
+
+.telefono dd, .mail dd {
+    color: var(--blanco);
+    font-size: 1.4em;
+    transition: all 0.3s;
+}
+
+.telefono dd:hover, .mail dd:hover, .social-media i:hover {
+    color: var(--violeta);
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5% auto;
+}
+
+.social-media i {
+    color: var(--gris1);
+    font-size: 3em;
+    margin: 5%;
+    transition: all 0.3s;
+}
+
+.der-footer {
+    width: 50%;
+}
+
+.form-wrap {
+    border-bottom: 1px solid var(--gris3);
+    margin-bottom: 25px;
+
+}
+
+.form-wrap textarea {
+    height: 200px;
+
+}
+
+.form-input {
+    background-color: transparent;
+    color: var(--blanco);
+    border: none;
+    padding-left: 15px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 1.3em;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.der-footer-wrapper {
+    margin: 8% 5%;
+    width: 80%;
+}
+
+form .button {
+    background-color: var(--gris2);
+    color: var(--negro);
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+form .button:hover{
+    background-color: var(--blanco);
+}
+
+.button-submit, .button-reset {
+    border: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+
+.form-botonera {
+    display: flex;
+    justify-content: space-around;
+}
+
+form div.reset {
+    border-left: 8px solid #f00;
+    padding: 12px 12px;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+}
+
+
