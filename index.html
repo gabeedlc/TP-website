@@ -4,51 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="CSS/estilos.css">
+    <meta name="keywords" content="robotica, roboteca, programacion, educacion, robots, desarrollo, tecnologia">
+    <meta name="author" content="Gabriel de la Cruz">
+    <meta name="description" content="Trabajo práctico">
+    <meta name="robots" content="noindex, nofollow">
+    <meta property="og:title" content="Icyra Robotica" >
+    <meta property="og:type" content="website" >
+    <meta property="og:url" content="http://gcruz.000webhostapp.com/">
+    <meta property="og:image" content="http://gcruz.000webhostapp.com/img/logo_small.png">
+    <link href="img/favico.png" rel="shortcut icon">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <title>Icyra Robotica</title>
 </head>
 <body>
-    <header class="encabezado">
-        <a href="#">
-            <img src="img/logo_small.png" alt="Logo Icyra">
-        </a>
-        <nav class="botonera">
-            <ul class="botonera-lista">
-                <li class="botonera-item"><a href="#">INICIO</a></li>
-                <li class="botonera-item"><a href="#roboteca">ROBOTECA</a></li>
-                <li class="botonera-item"><a href="#imasd">I+D</a></li>
-                <li class="botonera-item"><a href="#proyectos">PROYECTOS</a></li>
-                <li class="botonera-item"><a href="#contacto">CONTACTO</a></li>
-            </ul>
-        </nav><!-- Cierro botonera -->
+    <header class="header">
+        <div class="cloak aparecer"><a href="#roboteca"><i lang="en">Saltear navegación</i></a></div>
+        <div class="header-wrapper">
+            <div class="header-icon">
+                <a href="#top" class="anchorLink"><img src="img/logo_small.png" alt="Logo Icyra"></a>
+            </div>
+            <nav class="botonera">
+                <ul class="botonera-lista">
+                    <li class="botonera-item"><a href="#top" class="anchorLink">INICIO</a></li>
+                    <li class="botonera-item"><a href="#roboteca" class="anchorLink">ROBOTECA</a></li>
+                    <li class="botonera-item"><a href="#imasd" class="anchorLink">I+D</a></li>
+                    <li class="botonera-item"><a href="#proyectos" class="anchorLink">PROYECTOS</a></li>
+                    <li class="botonera-item"><a href="#contacto" class="anchorLink">CONTACTO</a></li>
+                </ul>
+            </nav><!-- Cierro botonera -->
+        </div>
     </header><!-- Cierro barra superior -->
-    <div class="contenedor">
-        <main class="contenido">
-            <div class="slider">
-                <div class="slider-img">
-                    <h1>Bienvenidos a ICYRA Robotica</h1>
+    <main class="contenido" id="top">
+        <div class="slider">
+            <div class="slider-wrapper">
+                <span class="slider-text1">Bienvenidos</span>
+                <h1 class="slider-text2">ICYRA Robotica</h1>
+            </div>
+        </div><!-- cierro slider -->
+        <section class="roboteca" id="roboteca">
+            <div class="izq-roboteca">
+                <div class="izq-roboteca-wrapper">
+                    <h2>Roboteca</h2>
+                    <h3>Talleres de robotica educativa</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis magni optio velit ipsam nesciunt, autem deserunt quis omnis iure, repellendus ducimus porro iusto excepturi inventore sed doloribus dolorem? Illum, quaerat.</p>
+                    <a href="construccion.html"><div class="button">Conozca mas</div></a>
                 </div>
-            </div><!-- cierro slider -->
-            <section class="roboteca" id="roboteca">
-                <div class="izq-roboteca">
-                    <div class="izq-roboteca-wrapper">
-                        <h1>Roboteca</h1>
-                        <h3>Talleres de robotica educativa</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis magni optio velit ipsam nesciunt, autem deserunt quis omnis iure, repellendus ducimus porro iusto excepturi inventore sed doloribus dolorem? Illum, quaerat.</p>
-                        <button class="button" href="#">conocé mas</button>
-                    </div>
-                </div><!-- cierro div .izq-roboteca -->
-                <div class="der-roboteca">
-                    <img src="img/robo1.jpg" class="img1" alt="">
-                    <img src="img/robo2.jpg" class="img2" alt="">
-                    <img src="img/robo3.jpg" class="img3" alt="">
-                    <img src="img/robo4.jpg" class="img4" alt="">
-                    <img src="img/robo5.jpg" class="img5" alt="">
-                    <img src="img/robo6.jpg" class="img6" alt="">
-                </div><!-- cierro div .der-roboteca -->
-            </section><!-- cierro section roboteca -->
-            <section class="id" id="imasd">
+            </div><!-- cierro div .izq-roboteca -->
+            <div class="der-roboteca">
+                    <a href="img/robo1.jpg" data-lightbox="img-roboteca"><img src="img/thumb/robo1.jpg" class="image img1" alt=""></a>
+                    <a href="img/robo2.jpg" data-lightbox="img-roboteca"><img src="img/thumb/robo2.jpg" class="image img2" alt=""></a>
+                    <a href="img/robo3.jpg" data-lightbox="img-roboteca"><img src="img/thumb/robo3.jpg" class="image img3" alt=""></a>
+                    <a href="img/robo4.jpg" data-lightbox="img-roboteca"><img src="img/thumb/robo4.jpg" class="image img4" alt=""></a>
+                    <a href="img/robo5.jpg" data-lightbox="img-roboteca"><img src="img/thumb/robo5.jpg" class="image img5" alt=""></a>
+                    <a href="img/robo6.jpg" data-lightbox="img-roboteca"><img src="img/thumb/robo6.jpg" class="image img6" alt=""></a>
+            </div><!-- cierro div .der-roboteca -->
+        </section><!-- cierro section roboteca -->
+        <section class="id" id="imasd">
+            <div class="id-wrapper">
                 <div class="izq-id">
                     <div class="izq-id-wrapper">
                         <div class="ejemplo-id">
@@ -75,92 +89,135 @@
                 </div><!-- cierro div .izq-id -->
                 <div class="der-id">
                     <div class="der-id-wrapper">
-                        <h1>I+D</h1>                        <h3>Desarrollo creativo<br>innovación constante</h3>
+                        <h2>I+D</h2>
+                        <h3>Desarrollo creativo<br>innovación constante</h3>
                     </div>
                 </div><!-- cierro div .der-id -->
-            </section><!-- cierro section .id -->
-            <section class="proyectos" id="proyectos">
-                <div class="proyectos-titulo">
-                    <h1>Proyectos</h1>
-                    <button class="button" href="#">Conozca mas</button>
-                </div>
-                <div class="proyectos-wrapper">
-                    <figure class="proyecto-contenido">
-                        <img src="img/proyecto1.jpg" alt=""/>
-                        <figcaption>
-                            <h2>Brazo robotico</h2>
-                            <p>There's that word again, heavy. Why are things so heavy in the future. Is there a problem with the Earth's gravitational pull?</p>
-                            <a href="#">Ver mas</a>
-                        </figcaption>			
-                    </figure>
-                    <figure class="proyecto-contenido">
-                        <img src="img/proyecto2.jpg" alt="img12"/>
-                        <figcaption>
-                            <h2>Robot buscador</h2>
-                            <p>Alright, McFly, you're asking for it, and now you're gonna get it.</p>
-                            <a href="#">Ver mas</a>
-                        </figcaption>			
-                    </figure>
-                </div>
-            </section><!-- cierro section proyectos-->
-        </main>
-    </div><!-- cierra contenedor-->
-    <footer class="pie" id="contacto">
-        <div class="izq-footer">
-            <div class="izq-footer-wrapper">
-                <div>
-                    <h2>Entre en contacto</h2>
-                    <p>Sientase libre de contactarnos para averiguar más respecto de nuestros servicios. <br> Estamos siempre atentos a sus inquietudes.</p>
-                </div>
-                <div class="footer-contacto">
-                    <dl class="telefono">
-                        <dt>Tel.</dt>
-                        <dd><a href="tel:#">(+5411) 15-6353-2869</a></dd>
-                    </dl>
-                    <dl class="mail">
-                        <dt>Mail.</dt>
-                        <dd><a href="mailto:#">info@icyrarobotica.com.ar</a></dd>
-                    </dl>
-                    <div class="social-media">
-                        <a href="https://es-la.facebook.com/icyrarobotica/" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="#" target=""></a><i class="fab fa-instagram"></i></a>
-                        <a href="#" target=""></a><i class="fab fa-youtube"></i></a>
-                    </div><!-- cierro div social-media -->
-                    
-                </div>
-                <p class="copyright">&copy; 2018 Icyra. Todos los derechos reservados</p>
             </div>
-        </div><!-- cierro div .izq-footer -->
-        <div class="der-footer">
-            <div class="der-footer-wrapper">
-                <form action="#">
-                    <div class="form-wrap form-wrap-icon">
-                        <div class="form-icon"></div>
-                        <input type="text" class="form-input" placeholder="Nombre" required>
-                    </div><!-- cierra form nombre -->
-                    <div class="form-wrap form-wrap-icon">
-                        <div class="form-icon"></div>
-                        <input type="tel" class="form-input" placeholder="Telefono">
-                    </div><!-- cierra form nombre -->
-                    <div class="form-wrap form-wrap-icon">
-                        <div class="form-icon"></div>
-                        <input type="email" class="form-input" placeholder="E-mail" required>
-                    </div><!-- cierra form e-mail -->
-                    <div class="form-wrap form-wrap-icon">
-                        <div class="form-icon"></div>
-                        <textarea name="mensaje" id="" cols="35" rows="10" class="form-input textarea-style" placeholder="Escriba su consulta aquí..." required></textarea>
-                    </div><!-- cierra form comentarios-->
-                    <div class="form-botonera">
-                        <div class="button reset"><label for="reset-form"></label>
-                            <input id="reset-form" type="reset" class="button-reset" value="Reiniciar">
-                        </div>
-                        <div class="button submit">
-                            <button class="button-submit">Enviar</button>
-                        </div><!-- cierra botón enviar -->
+        </section><!-- cierro section .id -->
+        <section class="proyectos" id="proyectos">
+            <div class="proyectos-titulo">
+                <h2>Proyectos</h2>
+                <a href="construccion.html"><div class="button">Conozca mas</div></a>
+            </div>
+            <div class="proyectos-wrapper">
+                <figure class="proyecto-contenido">
+                    <img src="img/proyecto1.jpg" alt=""/>
+                    <figcaption>
+                        <h3>Brazo robotico</h3>
+                        <p>There's that word again, heavy. Why are things so heavy in the future. Is there a problem with the Earth's gravitational pull?</p>
+                        <a href="#">Ver mas</a>
+                    </figcaption>			
+                </figure>
+                <figure class="proyecto-contenido">
+                    <img src="img/proyecto2.jpg" alt="img12"/>
+                    <figcaption>
+                        <h3>Robot buscador</h3>
+                        <p>Alright, McFly, you're asking for it, and now you're gonna get it.</p>
+                        <a href="#">Ver mas</a>
+                    </figcaption>			
+                </figure>
+            </div>
+        </section><!-- cierro section proyectos-->
+    </main><!-- cierra contenido principal-->
+    <footer class="footer" id="contacto">
+        <div class="footer-wrapper">
+            <div class="izq-footer">
+                <div class="izq-footer-wrapper">
+                    <div>
+                        <h3>Entre en contacto</h3>
+                        <p>Sientase libre de contactarnos para averiguar más respecto de nuestros servicios. <br> Estamos siempre atentos a sus inquietudes.</p>
                     </div>
-                </form>
-            </div>
-        </div><!-- cierra .der-footer -->
+                    <div class="footer-contacto">
+                        <dl class="telefono">
+                            <dt>Tel.</dt>
+                            <dd><a href="tel:+5491163532869">(+5411) 15-6353-2869</a></dd>
+                        </dl>
+                        <dl class="mail">
+                            <dt>Mail.</dt>
+                            <dd><a href="mailto:info@icyrarobotica.com.ar">info@icyrarobotica.com.ar</a></dd>
+                        </dl>
+                        <p>Conozca mas acerca de nuestro trabajo en las redes:</p>
+                        <div class="social-media">
+                            <a href="https://es-la.facebook.com/icyrarobotica/" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/laroboteca/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="construccion.html"><i class="fab fa-youtube"></i></a>
+                        </div><!-- cierro div social-media -->
+                    </div>
+                </div>
+            </div><!-- cierro div .izq-footer -->
+            <div class="der-footer">
+                <div class="der-footer-wrapper">
+                    <!-- <form action="php/contacto.php" method="POST"> -->
+                    <form class="form">
+                        <div class="form-datainput" id="datainput">
+                            <div class="form-wrap">
+                                <label for="nombre"><span class="form-icon"><i class="far fa-user"></i></span></label>
+                                <input type="text" class="form-input" name="nombre" id="nombre" placeholder="Nombre completo" required>
+                            </div><!-- cierra div nombre -->
+                            <div class="form-wrap">
+                                <label for="telefono"><span class="form-icon"><i class="fas fa-phone"></i></span></label>
+                                <input type="tel" class="form-input" name="telefono" id="telefono" placeholder="Telefono">
+                            </div><!-- cierra div tel -->
+                            <div class="form-wrap">
+                                <label for="email"><span class="form-icon"><i class="fas fa-envelope"></i></span></label>
+                                <input type="email" class="form-input" name="email" id="email" placeholder="E-mail" required>
+                            </div><!-- cierra div e-mail -->
+                            <div class="form-wrap">
+                                <label for="mensaje"><span class="form-icon"><i class="fas fa-pen"></i></span></label>
+                                <textarea rows="20" cols="30" class="form-input textarea-style" name="mensaje" id="mensaje" placeholder="Escriba su consulta aquí..." required></textarea>
+                            </div><!-- cierra div comentarios-->
+                        </div>
+                        <span id="resultado" class="form-resultado"></span>
+                        <div class="form-botonera">
+                            <button class="button-reset" type="reset" id="btnReset">
+                                <i class="fas fa-eraser"></i>
+                            </button>
+                            <button class="button-submit" id="btnEnviar" type="button">
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div><!-- cierra .der-footer -->
+            <p class="copyright">&copy; 2018 Icyra. Todos los derechos reservados | By Delecé </p>
+        </div>
     </footer><!-- cierra footer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/jquery.anchor.js"></script>
+    <script>
+            lightbox.option({
+              'wrapAround': true,
+              'imageFadeDuration': 500,
+              'resizeDuration': 500,
+              'showImageNumberLabel': false,
+            });
+    </script><script>
+        btnReset.addEventListener("click", function (){$("#resultado").html("")});
+        function form_contacto (nombre, telefono, email, mensaje){
+            var parametros = {
+                    "nombre" : nombre,
+                    "telefono" : telefono,
+                    "email" : email,
+                    "mensaje" : mensaje
+            };
+            $.ajax({
+                data:  parametros, //datos que se envian a traves de ajax
+                url:   'php/contacto.php', //archivo que recibe la peticion
+                type:  'post', //método de envio
+                beforeSend: function () {
+                    $("#resultado").html("Enviando...");
+                },
+                success: function (response) {
+                    //una vez que el archivo recibe el request lo procesa y lo devuelve
+                    $("#resultado").html(response);
+                }
+            });
+        }
+        btnEnviar.addEventListener("click", () => {
+            form_contacto(nombre.value, telefono.value, email.value, mensaje.value);
+        });
+    </script>
 </body>
 </html>
