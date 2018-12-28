@@ -1,0 +1,8 @@
+Link al sitio: 
+
+http://gcruz.000webhostapp.com
+
+Pautas opcionales:
+	Favico
+	Animaciones/Transiciones CSS
+	Etiquetas semánticas
