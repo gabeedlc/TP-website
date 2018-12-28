@@ -19,7 +19,7 @@
             )";
 
     $asunto = "Hemos recibido su consulta";
-    $respuesta = "Estimado ".$nombre."<br>Le agradecemos por contactarse con nosotros, responderemos a la brevedad.<br>Atentamente, equipo Icyra";
+    $respuesta = $nombre."<br>Le agradecemos por contactarse con nosotros, responderemos a la brevedad.<br>Atentamente, equipo Icyra";
     $cabeceras = 'From: Icyra Robotica <info@icyra.com.ar>'."\r\n";
     $cabeceras .= "MIME-Version: 1.0\r\n";
     $cabeceras .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
